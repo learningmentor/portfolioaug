@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | Developer & AI Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-cyan-400">
+                Portfolio<span class="text-slate-100">.io</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#contact" class="px-4 py-2 rounded-full bg-cyan-500 text-slate-950 font-semibold hover:bg-cyan-400 transition-all">Get in Touch</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400">About</a>
+            <a href="#skills" class="block text-slate-300 hover:text-cyan-400">Skills</a>
+            <a href="#experience" class="block text-slate-300 hover:text-cyan-400">Experience</a>
+            <a href="#projects" class="block text-slate-300 hover:text-cyan-400">Projects</a>
+            <a href="#contact" class="block text-cyan-400 font-medium">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-950/20 via-slate-950 to-slate-950 pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-medium mb-6">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> Software Engineer & AI Researcher
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+                Hi, I'm <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Your Name</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Building intelligent software systems, designing robust web applications, and exploring the frontiers of machine learning and data science.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-cyan-500 text-slate-950 font-semibold hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20">
+                    Explore My Work
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 font-semibold hover:bg-slate-800 hover:text-white transition-all">
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold tracking-tight mb-6 text-slate-100">About Me</h2>
+                    <p class="text-slate-400 mb-4 leading-relaxed">
+                        I am a passionate software developer and technology enthusiast focused on writing clean, scalable code and solving complex computational challenges. My background spans across backend web engineering and modern machine learning frameworks.
+                    </p>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Whether it's optimizing database queries, building responsive user interfaces, or training predictive algorithms, I enjoy turning abstract concepts into production-ready solutions.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <span class="block text-2xl font-bold text-cyan-400 mb-1">3+</span>
+                            <span class="text-xs text-slate-400">Years of Experience</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <span class="block text-2xl font-bold text-cyan-400 mb-1">20+</span>
+                            <span class="text-xs text-slate-400">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-80 rounded-2xl bg-gradient-to-tr from-cyan-500/10 to-blue-500/10 border border-slate-800 flex items-center justify-center p-8">
+                        <div class="space-y-4 text-center">
+                            <i class="fa-solid fa-code text-5xl text-cyan-400"></i>
+                            <h3 class="text-lg font-semibold text-slate-200">Clean Code & Scalable Architecture</h3>
+                            <p class="text-sm text-slate-400">Committed to best practices, performance optimization, and continuous learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight mb-4 text-slate-100">Technical Expertise</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Core technologies, languages, and tools I use to bring ideas to life.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill Category 1 -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6">
+                        <i class="fa-solid fa-server text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-200">Backend Development</h3>
+                    <p class="text-sm text-slate-400 mb-4">Building secure APIs, managing data pipelines, and structuring server logic.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">Python</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">Node.js</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">SQL / NoSQL</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6">
+                        <i class="fa-solid fa-brain text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-200">Machine Learning & AI</h3>
+                    <p class="text-sm text-slate-400 mb-4">Developing predictive models, data analysis frameworks, and intelligent utilities.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">Scikit-Learn</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">Pandas / NumPy</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">TensorFlow</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">Data Visualization</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6">
+                        <i class="fa-solid fa-laptop-code text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-200">Frontend & Tools</h3>
+                    <p class="text-sm text-slate-400 mb-4">Creating responsive user interfaces and utilizing efficient development toolchains.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">HTML5 / CSS3</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">Tailwind CSS</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">Git & GitHub</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight mb-4 text-slate-100">Experience & Education</h2>
+                <p class="text-slate-400">A timeline of my academic background and professional history.</p>
+            </div>
+
+            <div class="space-y-8 border-l border-slate-800 pl-6 ml-4 sm:ml-8">
+                <!-- Item 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-cyan-500 border-4 border-slate-950"></div>
+                    <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">2023 - Present</span>
+                    <h3 class="text-xl font-bold text-slate-100 mt-1">Software Engineer / AI Specialist</h3>
+                    <p class="text-sm font-medium text-slate-400 mb-2">Tech Company Inc.</p>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Developing backend services, implementing machine learning models, and collaborating with cross-functional teams to deliver high-performance applications.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                    <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">2021 - 2023</span>
+                    <h3 class="text-xl font-bold text-slate-100 mt-1">Junior Developer & Researcher</h3>
+                    <p class="text-sm font-medium text-slate-400 mb-2">Digital Solutions Lab</p>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Focused on web scripting, database optimization, and initial prototyping for automated tool pipelines.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                    <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">2021</span>
+                    <h3 class="text-xl font-bold text-slate-100 mt-1">Bachelor of Science in Computer Science</h3>
+                    <p class="text-sm font-medium text-slate-400 mb-2">University Name</p>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Completed core coursework in data structures, algorithms, object-oriented programming, and software engineering principles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight mb-4 text-slate-100">Featured Projects</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Highlighting some of my favorite recent builds and technical explorations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-500/50 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-medium">AI Tool</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-slate-200">Conversational Assistant</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                            An interactive text assistant designed to parse user inputs, execute contextual logic, and deliver structured natural language responses.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/60">
+                        <span class="text-xs text-slate-400 px-2.5 py-1 rounded bg-slate-800">Python</span>
+                        <span class="text-xs text-slate-400 px-2.5 py-1 rounded bg-slate-800">NLP</span>
+                        <span class="text-xs text-slate-400 px-2.5 py-1 rounded bg-slate-800">Flask</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-500/50 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-medium">Data Dashboard</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-slate-200">Analytics Dashboard</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                            A real-time data visualization platform built to aggregate metrics, run statistical queries, and display responsive charts.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/60">
+                        <span class="text-xs text-slate-400 px-2.5 py-1 rounded bg-slate-800">JavaScript</span>
+                        <span class="text-xs text-slate-400 px-2.5 py-1 rounded bg-slate-800">Tailwind CSS</span>
+                        <span class="text-xs text-slate-400 px-2.5 py-1 rounded bg-slate-800">Chart.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold tracking-tight mb-4 text-slate-100">Let's Work Together</h2>
+            <p class="text-slate-400 max-w-xl mx-auto mb-10">
+                Have a question, a potential project collaboration, or just want to say hi? Feel free to reach out.
+            </p>
+            <div class="inline-flex flex-col sm:flex-row items-center gap-4 justify-center">
+                <a href="mailto:your.email@example.com" class="px-8 py-3.5 rounded-full bg-cyan-500 text-slate-950 font-semibold hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20">
+                    <i class="fa-solid fa-envelope mr-2"></i> Send an Email
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 font-semibold hover:bg-slate-800 hover:text-white transition-all">
+                    <i class="fa-brands fa-github mr-2"></i> GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Simple Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
